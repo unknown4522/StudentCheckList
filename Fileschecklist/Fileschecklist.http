@@ -1,0 +1,6 @@
+@Fileschecklist_HostAddress = http://localhost:5026
+
+GET {{Fileschecklist_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

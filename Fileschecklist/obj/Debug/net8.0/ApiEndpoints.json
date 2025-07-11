@@ -1,0 +1,211 @@
+[
+  {
+    "ContainingType": "Fileschecklist.Controllers.Auth",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.Campuses",
+    "Method": "GetCampuses",
+    "RelativePath": "api/Campuses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Fileschecklist.Models.Checklistmodel\u002BCampus, Fileschecklist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.StudentfilesController",
+    "Method": "GetStudentfiles",
+    "RelativePath": "api/Studentfiles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Fileschecklist.Models.Studentfiles, Fileschecklist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.StudentfilesController",
+    "Method": "GetById",
+    "RelativePath": "api/Studentfiles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Fileschecklist.Models.Studentfiles",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.StudentfilesController",
+    "Method": "Create",
+    "RelativePath": "api/Studentfiles/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "studentname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "gradelevel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "remarks",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "section",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lrn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "formerschool",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "psa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "card",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "enrollmentform",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "passportpicture",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "academichonors",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "indegency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "form137",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Fileschecklist.Models.Studentfiles",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Fileschecklist.WeatherForecast, Fileschecklist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

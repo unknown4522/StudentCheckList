@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project Dev\\Fileschecklist\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\controllers\\studentchecklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\controllers\\studentchecklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\controllers\\campuses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\controllers\\campuses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\fileschecklist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\fileschecklist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\controllers\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\controllers\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\models\\checklistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\models\\checklistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|c:\\project dev\\fileschecklist\\fileschecklist\\fileschecklist.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B99F0574-8AAC-4B29-B35B-1AEB8DE23111}|Fileschecklist\\Fileschecklist.csproj|solutionrelative:fileschecklist\\fileschecklist.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\Auth.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Controllers\\Auth.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\Auth.cs",
+              "RelativeToolTip": "Fileschecklist\\Controllers\\Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T00:38:13.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Checklistmodel.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Models\\Checklistmodel.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Models\\Checklistmodel.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Models\\Checklistmodel.cs",
+              "RelativeToolTip": "Fileschecklist\\Models\\Checklistmodel.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA8wDgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T03:01:20.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Data\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Data\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Data\\AppDbContextFactory.cs",
+              "RelativeToolTip": "Fileschecklist\\Data\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T02:58:25.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentChecklist.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\StudentChecklist.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Controllers\\StudentChecklist.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\StudentChecklist.cs",
+              "RelativeToolTip": "Fileschecklist\\Controllers\\StudentChecklist.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwEsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T09:42:50.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Fileschecklist\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T02:58:09.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Campuses.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\Campuses.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Controllers\\Campuses.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\Campuses.cs",
+              "RelativeToolTip": "Fileschecklist\\Controllers\\Campuses.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T03:04:54.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Program.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Program.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Program.cs",
+              "RelativeToolTip": "Fileschecklist\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T02:57:25.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\appsettings.json",
+              "RelativeDocumentMoniker": "Fileschecklist\\appsettings.json",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\appsettings.json",
+              "RelativeToolTip": "Fileschecklist\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-07T02:55:57.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Fileschecklist\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Fileschecklist\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-09T13:38:29.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fileschecklist.csproj",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Fileschecklist.csproj",
+              "RelativeDocumentMoniker": "Fileschecklist\\Fileschecklist.csproj",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Fileschecklist.csproj",
+              "RelativeToolTip": "Fileschecklist\\Fileschecklist.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-07T01:37:48.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Fileschecklist\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Fileschecklist\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T09:41:30.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Fileschecklist.http",
+              "DocumentMoniker": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Fileschecklist.http",
+              "RelativeDocumentMoniker": "Fileschecklist\\Fileschecklist.http",
+              "ToolTip": "C:\\Project Dev\\Fileschecklist\\Fileschecklist\\Fileschecklist.http",
+              "RelativeToolTip": "Fileschecklist\\Fileschecklist.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-07-09T10:08:01.475Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
