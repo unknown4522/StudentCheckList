@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // ✅ Register Razor Pages
 builder.Services.AddRazorPages();
 
-// ✅ Register session services (BEFORE Build)
+// ✅ Register session services
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -16,25 +16,17 @@ builder.Services.AddSession(options =>
 // ✅ Register HTTP clients for your services
 builder.Services.AddHttpClient<StudentfilesService>(client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7116/");
+    client.BaseAddress = new Uri("https://localhost:7116/"); // ✅ Replace with your actual API base URL
 });
 
-////builder.Services.AddHttpClient<CampusService>(client =>
-////{
-////    client.BaseAddress = new Uri("https://localhost:7116/");
-////});
+// ✅ Register other services (no duplicate AddHttpClient calls needed for these)
 
-////builder.Services.AddHttpClient<SchoolyearService>(client =>
-////{
-////    client.BaseAddress = new Uri("https://localhost:7116/");
-//});
-builder.Services.AddScoped<StudentfilesService>();
 builder.Services.AddScoped<CampusService>();
 builder.Services.AddScoped<SchoolyearService>();
-// ✅ Optional: if you also want a general HttpClient
-builder.Services.AddHttpClient(); // This is fine, but not required if not used
 
-// ✅ Build the app
+// ✅ Optional: general HttpClient
+builder.Services.AddHttpClient(); // OK to keep if used elsewhere
+
 var app = builder.Build();
 
 // ✅ Middleware pipeline
@@ -47,7 +39,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseSession(); // ✅ Session must come BEFORE UseAuthorization
+app.UseSession(); // ✅ Session before Authorization
 app.UseAuthorization();
 
 // ✅ Default route to Login page

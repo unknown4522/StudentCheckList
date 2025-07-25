@@ -1,6 +1,7 @@
-﻿using System.Net.Http;
-using System.Net.Http.Json;
+﻿using Microsoft.AspNetCore.Mvc;
 using StudentFilesFrontend.Models;
+using System.Net.Http;
+using System.Net.Http.Json;
 
 namespace StudentFilesFrontend.Services
 {
@@ -12,8 +13,7 @@ namespace StudentFilesFrontend.Services
         {
             _httpClient = httpClient;
         }
-
-        // ✅ GET ALL STUDENTS
+       
         public async Task<List<Studentfiles>?> GetAllAsync()
         {
             return await _httpClient.GetFromJsonAsync<List<Studentfiles>>("api/Studentfiles");
@@ -37,28 +37,43 @@ namespace StudentFilesFrontend.Services
 
             return await _httpClient.PostAsync($"api/Studentfiles/add?{queryParams}", null);
         }
-        // ✅ CORRECT
+        //// ✅ CORRECT
+        //public async Task<List<Studentfiles>> GetBySchoolyearAndCampusAsync(string schoolyearName, string campusName)
+        //{
+        //    try
+        //    {
+        //        var encodedYear = Uri.EscapeDataString(schoolyearName);
+        //        var encodedCampus = Uri.EscapeDataString(campusName);
+
+        //        var response = await _httpClient.GetAsync($"api/Studentfiles?schoolyearName={encodedYear}&campusName={encodedCampus}");
+
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            var students = await response.Content.ReadFromJsonAsync<List<Studentfiles>>();
+        //            return students ?? new List<Studentfiles>();
+        //        }
+
+        //        return new List<Studentfiles>();
+        //    }
+        //    catch
+        //    {
+        //        return new List<Studentfiles>();
+        //    }
+        //}
         public async Task<List<Studentfiles>> GetBySchoolyearAndCampusAsync(string schoolyear, string campusName)
         {
-            try
+            var encodedYear = Uri.EscapeDataString(schoolyear);
+            var encodedCampus = Uri.EscapeDataString(campusName);
+
+            var response = await _httpClient.GetAsync($"api/Studentfiles?schoolyearName={encodedYear}&campusName={encodedCampus}");
+
+            if (response.IsSuccessStatusCode)
             {
-                var encodedYear = Uri.EscapeDataString(schoolyear);
-                var encodedCampus = Uri.EscapeDataString(campusName);
-
-                var response = await _httpClient.GetAsync($"api/Studentfiles?schoolyearName={encodedYear}&campusName={encodedCampus}");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var students = await response.Content.ReadFromJsonAsync<List<Studentfiles>>();
-                    return students ?? new List<Studentfiles>();
-                }
-
-                return new List<Studentfiles>();
+                return await response.Content.ReadFromJsonAsync<List<Studentfiles>>() ?? new List<Studentfiles>();
             }
-            catch
-            {
-                return new List<Studentfiles>();
-            }
+
+            var error = await response.Content.ReadAsStringAsync();
+            throw new Exception($"API error: {error}");
         }
 
     }

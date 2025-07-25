@@ -31,3 +31,4 @@ C:\Project Dev\ChecklistDesign\ChecklistDesign\obj\Debug\net8.0\refint\Checklist
 C:\Project Dev\ChecklistDesign\ChecklistDesign\obj\Debug\net8.0\ChecklistDesign.pdb
 C:\Project Dev\ChecklistDesign\ChecklistDesign\obj\Debug\net8.0\ChecklistDesign.genruntimeconfig.cache
 C:\Project Dev\ChecklistDesign\ChecklistDesign\obj\Debug\net8.0\ref\ChecklistDesign.dll
+C:\Project Dev\ChecklistDesign\ChecklistDesign\obj\Debug\net8.0\ChecklistDesign.sourcelink.json

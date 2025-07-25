@@ -13,7 +13,7 @@ public class StudentListModel : PageModel
     public Studentfiles NewStudent { get; set; } = new Studentfiles();
 
     [BindProperty(SupportsGet = true)]
-    public string? Schoolyear { get; set; }
+    public string? Schoolyear { get; set; }  
 
     [BindProperty(SupportsGet = true)]
     public string? CampusName { get; set; }
@@ -27,15 +27,18 @@ public class StudentListModel : PageModel
 
     public async Task<IActionResult> OnGetAsync()
     {
+        // Prevent caching
         Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate";
         Response.Headers["Pragma"] = "no-cache";
         Response.Headers["Expires"] = "0";
 
+        // Redirect to login if not authenticated
         if (HttpContext.Session.GetString("IsAuthenticated") != "true")
         {
             return RedirectToPage("/Login");
         }
 
+        // ✅ FILTERED: Check if query parameters exist
         if (!string.IsNullOrEmpty(Schoolyear) && !string.IsNullOrEmpty(CampusName))
         {
             Students = await _service.GetBySchoolyearAndCampusAsync(Schoolyear, CampusName);
@@ -47,6 +50,7 @@ public class StudentListModel : PageModel
         }
         else
         {
+            // 🟡 UNFILTERED: Load all students
             Students = await _service.GetAllAsync();
         }
 
@@ -57,7 +61,7 @@ public class StudentListModel : PageModel
     {
         if (!ModelState.IsValid)
         {
-            Students = await _service.GetAllAsync(); // reload students to stay on page
+            Students = await _service.GetAllAsync(); // Keep data loaded
             return Page();
         }
 
@@ -65,7 +69,7 @@ public class StudentListModel : PageModel
 
         if (response.IsSuccessStatusCode)
         {
-            return RedirectToPage(); // Refresh to clear form and update list
+            return RedirectToPage(); // Success — reload list
         }
 
         ModelState.AddModelError(string.Empty, "Failed to add student.");

@@ -16,6 +16,8 @@
         font-size: 0.9rem;
     }
 </style>
+
+
 <!-- 📋 PAGE CONTENT -->
 <div class="container mt-4">
     <h2 class="mb-4">📋 Student Files</h2>
@@ -316,10 +318,6 @@
 </div>
 
 
-<!-- ➕ PDF MODAL -->
-z
-
-
 <!-- 📜 SCRIPTS -->
 @section Scripts {
     <script>
@@ -434,35 +432,6 @@ z
             }
         });
     </script>
-
-
-    <script>
-                    
-        document.addEventListener("DOMContentLoaded", async () => {
-            const dropdown = document.getElementById("schoolyearDropdown");
-
-            try {
-                const response = await fetch("https://localhost:7116/api/Schoolyear"); // ✅ Make sure this is correct
-
-                if (!response.ok) {
-                    throw new Error("Failed to fetch school years.");
-                }
-
-                const data = await response.json();
-
-                data.forEach(item => {
-                    const option = document.createElement("option");
-                    option.value = item.schoolyearName; // ✅ Adjust if your property is named differently
-                    option.textContent = item.schoolyearName;
-                    dropdown.appendChild(option);
-                });
-
-            } catch (error) {
-                console.error("❌ Error loading school years:", error);
-            }
-        });
-    </script>
-
 }
 
     <!-- ✅ Bootstrap -->

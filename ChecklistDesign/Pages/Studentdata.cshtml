@@ -1,0 +1,41 @@
+﻿@page
+@model StudentFilesFrontend.Pages.Students.StudentdataModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using StudentFilesFrontend.Models
+
+<h3 class="fw-bold mb-3">
+    Students for @Model.Schoolyear (@Model.CampusName)
+</h3>
+
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+else if (Model.Students != null && Model.Students.Any())
+{
+    <table class="table table-bordered table-striped table-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Name</th>
+                <th>Grade Level</th>
+                <th>Status</th>
+                <th>Section</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.Students)
+            {
+                <tr>
+                    <td>@student.Studentname</td>
+                    <td>@student.Gradelevel</td>
+                    <td>@student.Status</td>
+                    <td>@student.Section</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">No student records found.</div>
+}
