@@ -28,6 +28,11 @@
     <button class="btn btn-danger mb-3" data-bs-toggle="modal" data-bs-target="#pdfFilterModal">
         <i class="bi bi-file-earmark-pdf"></i> Generate PDF
     </button>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <input id="searchInput" type="text" class="form-control" placeholder="🔍 Search by name..." onkeyup="filterTable()" />
+        </div>
+    </div>
 
     @if (Model.Students == null || Model.Students.Count == 0)
     {
@@ -70,8 +75,51 @@
                 </tbody>
             </table>
         </div>
+
+        <!-- ✅ Pagination -->
+        @if (Model.TotalPages > 1)
+        {
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item @(Model.CurrentPage == 1 ? "disabled" : "")">
+                        <a class="page-link"
+                           asp-page="./StudentList"
+                           asp-route-currentPage="@(Model.CurrentPage - 1)"
+                           asp-route-schoolyear="@Model.Schoolyear"
+                           asp-route-campusName="@Model.CampusName">
+                            Previous
+                        </a>
+                    </li>
+
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                            <a class="page-link"
+                               asp-page="./StudentList"
+                               asp-route-currentPage="@i"
+                               asp-route-schoolyear="@Model.Schoolyear"
+                               asp-route-campusName="@Model.CampusName">
+                                @i
+                            </a>
+                        </li>
+                    }
+
+                    <li class="page-item @(Model.CurrentPage == Model.TotalPages ? "disabled" : "")">
+                        <a class="page-link"
+                           asp-page="./StudentList"
+                           asp-route-currentPage="@(Model.CurrentPage + 1)"
+                           asp-route-schoolyear="@Model.Schoolyear"
+                           asp-route-campusName="@Model.CampusName">
+                            Next
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        }
+
     }
 </div>
+
 
 <!-- 🎓 Student Details Modal -->
 <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModalLabel" aria-hidden="true">
@@ -431,6 +479,38 @@
                 alert("❌ Network error:\n" + err.message);
             }
         });
+    </script>
+
+    @* Seach Bar function  *@
+    <script>
+        function filterTable() {
+            const input = document.getElementById("searchInput");
+            const filter = input.value.toLowerCase();
+            const rows = document.querySelectorAll("#studentTable tbody tr");
+
+            rows.forEach(row => {
+                const nameCell = row.cells[1]; // 2nd column is "Name"
+                const name = nameCell.textContent.toLowerCase();
+                row.style.display = name.includes(filter) ? "" : "none";
+            });
+        }
+
+        // ✅ Automatically sort by name A–Z on page load
+        function autoSortByNameAZ() {
+            const table = document.getElementById("studentTable").getElementsByTagName("tbody")[0];
+            const rows = Array.from(table.rows);
+
+            rows.sort((a, b) => {
+                const nameA = a.cells[1].textContent.trim().toLowerCase();
+                const nameB = b.cells[1].textContent.trim().toLowerCase();
+                return nameA.localeCompare(nameB);
+            });
+
+            rows.forEach(row => table.appendChild(row));
+        }
+
+        // Run sort after page loads
+        window.addEventListener("load", autoSortByNameAZ);
     </script>
 }
 

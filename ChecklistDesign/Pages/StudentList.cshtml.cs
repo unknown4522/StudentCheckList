@@ -13,11 +13,16 @@ public class StudentListModel : PageModel
     public Studentfiles NewStudent { get; set; } = new Studentfiles();
 
     [BindProperty(SupportsGet = true)]
-    public string? Schoolyear { get; set; }  
+    public string? Schoolyear { get; set; }
 
     [BindProperty(SupportsGet = true)]
     public string? CampusName { get; set; }
 
+    [BindProperty(SupportsGet = true)]
+    public int CurrentPage { get; set; } = 1;
+
+    public int PageSize { get; set; } = 5;
+    public int TotalPages { get; set; }
     public bool FilteredButNoResults { get; set; } = false;
 
     public StudentListModel(StudentfilesService service)
@@ -38,21 +43,35 @@ public class StudentListModel : PageModel
             return RedirectToPage("/Login");
         }
 
-        // ✅ FILTERED: Check if query parameters exist
+        List<Studentfiles>? allStudents;
+
+        // ✅ FILTERED
         if (!string.IsNullOrEmpty(Schoolyear) && !string.IsNullOrEmpty(CampusName))
         {
-            Students = await _service.GetBySchoolyearAndCampusAsync(Schoolyear, CampusName);
+            allStudents = await _service.GetBySchoolyearAndCampusAsync(Schoolyear, CampusName);
 
-            if (Students == null || Students.Count == 0)
+            if (allStudents == null || allStudents.Count == 0)
             {
                 FilteredButNoResults = true;
+                Students = new List<Studentfiles>();
+                return Page();
             }
         }
         else
         {
-            // 🟡 UNFILTERED: Load all students
-            Students = await _service.GetAllAsync();
+            // 🟡 UNFILTERED
+            allStudents = await _service.GetAllAsync();
         }
+
+        // ✅ PAGINATION
+        int totalItems = allStudents?.Count ?? 0;
+        TotalPages = (int)Math.Ceiling(totalItems / (double)PageSize);
+        CurrentPage = Math.Clamp(CurrentPage, 1, TotalPages);
+
+        Students = allStudents!
+            .Skip((CurrentPage - 1) * PageSize)
+            .Take(PageSize)
+            .ToList();
 
         return Page();
     }
@@ -61,7 +80,7 @@ public class StudentListModel : PageModel
     {
         if (!ModelState.IsValid)
         {
-            Students = await _service.GetAllAsync(); // Keep data loaded
+            Students = await _service.GetAllAsync();
             return Page();
         }
 
@@ -69,7 +88,7 @@ public class StudentListModel : PageModel
 
         if (response.IsSuccessStatusCode)
         {
-            return RedirectToPage(); // Success — reload list
+            return RedirectToPage(); // reload with GET
         }
 
         ModelState.AddModelError(string.Empty, "Failed to add student.");
