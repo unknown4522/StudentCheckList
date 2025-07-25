@@ -41,13 +41,127 @@
     ]
   },
   {
+    "ContainingType": "Fileschecklist.Controllers.SchoolyearController",
+    "Method": "GetAll",
+    "RelativePath": "api/Schoolyear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Fileschecklist.Models.Schoolyear, Fileschecklist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.SchoolyearController",
+    "Method": "GetById",
+    "RelativePath": "api/Schoolyear/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Fileschecklist.Models.Schoolyear",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.SchoolyearController",
+    "Method": "Create",
+    "RelativePath": "api/Schoolyear/AddSchoolyear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolyearName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "campusName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Fileschecklist.Models.Schoolyear",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.SchoolyearController",
+    "Method": "GetByCampusName",
+    "RelativePath": "api/Schoolyear/by-campus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "campusName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Fileschecklist.Models.Schoolyear, Fileschecklist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Fileschecklist.Controllers.StudentfilesController",
     "Method": "GetStudentfiles",
     "RelativePath": "api/Studentfiles",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "schoolyearName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "campusName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[Fileschecklist.Models.Studentfiles, Fileschecklist, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -173,6 +287,16 @@
         "Name": "form137",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "campusName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "schoolyearName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -186,6 +310,138 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.StudentfilesController",
+    "Method": "GenerateFilteredPdf",
+    "RelativePath": "api/Studentfiles/generate-pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "field",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "schoolyear",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "campusName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Fileschecklist.Controllers.StudentfilesController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/Studentfiles/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StudentID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Studentname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gradelevel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Remarks",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Section",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Lrn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Formerschool",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PSA",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Card",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Enrollmentform",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Passportpicture",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Academichonors",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Indegency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Form137",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SchoolyearName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CampusName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Fileschecklist.Controllers.WeatherForecastController",

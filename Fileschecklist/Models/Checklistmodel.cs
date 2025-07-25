@@ -9,7 +9,7 @@ namespace Fileschecklist.Models
         {
             [Key]
             [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-            public int ID { get; set; }
+            public int CampusID { get; set; }
 
             public string? CampusName { get; set; }
         }
@@ -50,12 +50,34 @@ namespace Fileschecklist.Models
         public string? Indegency { get; set; }
 
         public string? Form137 { get; set; }
+
+        public string? SchoolyearName { get; set; }
+
+        public string? CampusName { get; set; }
     }
     public class User
     {
         public int Id { get; set; }
         public string? Username { get; set; }
-        public string? Password { get; set; } 
+        public string? Password { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Role { get; set; }
+        public string? Profilepic { get; set; }
+        public string? CampusName { get; set; }
+
+
+    }
+
+    public class Schoolyear
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int SchoolyearID { get; set; }
+
+        public string? SchoolyearName { get; set; }
+
+        public string? CampusName { get; set; }
     }
 
 

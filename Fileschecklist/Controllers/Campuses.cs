@@ -21,7 +21,7 @@ namespace Fileschecklist.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Campus>>> GetCampuses()
         {
-            var Campus = await _context.Campus.ToListAsync();
+            var Campus = await _context.Campuses.ToListAsync();
 
             if (Campus == null || Campus.Count == 0)
             {

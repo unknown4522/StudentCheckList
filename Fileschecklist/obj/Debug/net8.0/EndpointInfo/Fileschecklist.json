@@ -71,10 +71,196 @@
         }
       }
     },
+    "/api/Schoolyear": {
+      "get": {
+        "tags": [
+          "Schoolyear"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Schoolyear"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Schoolyear"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Schoolyear"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Schoolyear/by-campus": {
+      "get": {
+        "tags": [
+          "Schoolyear"
+        ],
+        "parameters": [
+          {
+            "name": "campusName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Schoolyear"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Schoolyear"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Schoolyear"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Schoolyear/{id}": {
+      "get": {
+        "tags": [
+          "Schoolyear"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Schoolyear"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Schoolyear"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Schoolyear"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Schoolyear/AddSchoolyear": {
+      "post": {
+        "tags": [
+          "Schoolyear"
+        ],
+        "parameters": [
+          {
+            "name": "schoolyearName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "campusName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Schoolyear"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Schoolyear"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Schoolyear"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Studentfiles": {
       "get": {
         "tags": [
           "Studentfiles"
+        ],
+        "parameters": [
+          {
+            "name": "schoolyearName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "campusName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -265,6 +451,20 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "campusName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "schoolyearName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -287,6 +487,188 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/Studentfiles/update": {
+      "put": {
+        "tags": [
+          "Studentfiles"
+        ],
+        "parameters": [
+          {
+            "name": "StudentID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Studentname",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Gradelevel",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Remarks",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Section",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Lrn",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Formerschool",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PSA",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Card",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Enrollmentform",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Passportpicture",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Academichonors",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Indegency",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Form137",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SchoolyearName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "CampusName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Studentfiles/generate-pdf": {
+      "get": {
+        "tags": [
+          "Studentfiles"
+        ],
+        "parameters": [
+          {
+            "name": "field",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "schoolyear",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "campusName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -336,9 +718,27 @@
       "Campus": {
         "type": "object",
         "properties": {
-          "id": {
+          "campusID": {
             "type": "integer",
             "format": "int32"
+          },
+          "campusName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Schoolyear": {
+        "type": "object",
+        "properties": {
+          "schoolyearID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "schoolyearName": {
+            "type": "string",
+            "nullable": true
           },
           "campusName": {
             "type": "string",
@@ -411,6 +811,14 @@
             "nullable": true
           },
           "form137": {
+            "type": "string",
+            "nullable": true
+          },
+          "schoolyearName": {
+            "type": "string",
+            "nullable": true
+          },
+          "campusName": {
             "type": "string",
             "nullable": true
           }
