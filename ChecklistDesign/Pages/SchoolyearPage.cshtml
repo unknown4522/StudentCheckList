@@ -1,0 +1,159 @@
+﻿@page
+@model ChecklistDesign.Pages.SchoolyearPageModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "School Year Management";
+}
+
+<h2 class="mb-4 text-center fw-bold">School Year List</h2>
+
+<!-- Add Button -->
+<button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#schoolyearModal" onclick="openAddModal()">➕ Add School Year</button>
+
+<!-- Table -->
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>School Year</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.SchoolYears?.Any() ?? false)
+        {
+            int index = 1;
+            foreach (var year in Model.SchoolYears)
+            {
+                <tr style="cursor:pointer;" onclick="goToStudentList('@year.SchoolyearName')">
+                    <td>@index</td>
+                    <td>@year.SchoolyearName</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning" type="button"
+                                onclick="event.stopPropagation(); editSchoolyear(@year.SchoolyearID, '@year.SchoolyearName')">
+                            ✏️ Edit
+                        </button>
+                        <button class="btn btn-sm btn-danger" type="button"
+                                onclick="event.stopPropagation(); deleteSchoolyear(@year.SchoolyearID)">
+                            🗑️ Delete
+                        </button>
+                    </td>
+                </tr>
+                index++;
+            }
+        }
+        else
+        {
+            <tr><td colspan="3">No school years found.</td></tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="schoolyearModal" tabindex="-1" aria-labelledby="schoolyearModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" asp-page-handler="Save" id="schoolyearForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="schoolyearModalLabel">Add School Year</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="SchoolyearID" name="SchoolyearID" />
+
+                    <div class="mb-3">
+                        <label for="SchoolyearName" class="form-label">School Year Name</label>
+                        <input type="text" class="form-control" id="SchoolyearName" name="SchoolyearName" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="CampusName" class="form-label">Campus Name</label>
+                        <input type="text" class="form-control" id="CampusName" name="CampusName" value="@Model.CampusName" readonly />
+                    </div>
+
+                    <div id="errorMessage" class="alert alert-danger d-none" role="alert"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const campusName = '@Model.CampusName';
+
+        function openAddModal() {
+            document.getElementById("SchoolyearID").value = "";
+            document.getElementById("SchoolyearName").value = "";
+            document.getElementById("CampusName").value = campusName;
+            document.getElementById("schoolyearModalLabel").innerText = "Add School Year";
+            document.getElementById("errorMessage").classList.add("d-none");
+        }
+
+        function editSchoolyear(id, name) {
+            document.getElementById("SchoolyearID").value = id;
+            document.getElementById("SchoolyearName").value = name;
+            document.getElementById("CampusName").value = campusName;
+            document.getElementById("schoolyearModalLabel").innerText = "Edit School Year";
+            document.getElementById("errorMessage").classList.add("d-none");
+
+            const modal = new bootstrap.Modal(document.getElementById("schoolyearModal"));
+            modal.show();
+        }
+
+        function goToStudentList(schoolyearName) {
+            const encodedYear = encodeURIComponent(schoolyearName);
+            const encodedCampus = encodeURIComponent(campusName);
+            window.location.href = `/StudentList?schoolyear=${encodedYear}&campusName=${encodedCampus}`;
+        }
+
+        async function deleteSchoolyear(id) {
+            if (!confirm("Are you sure you want to delete this school year?")) return;
+
+            const response = await fetch(`/SchoolyearPage?handler=Delete&id=${id}`, {
+                method: "POST"
+            });
+
+            if (response.ok) {
+                location.reload();
+            } else {
+                alert("Failed to delete.");
+            }
+        }
+
+                document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("schoolyearForm").addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                const form = e.target;
+                const formData = new FormData(form);
+
+                const response = await fetch('?handler=Save', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                const errorDiv = document.getElementById("errorMessage");
+                errorDiv.classList.add("d-none");
+                errorDiv.innerText = "";
+
+                if (result.success) {
+                    location.reload();
+                } else {
+                    errorDiv.classList.remove("d-none");
+                    errorDiv.innerText = result.message || "An error occurred while saving.";
+                }
+            });
+        });
+
+
+    </script>
+}

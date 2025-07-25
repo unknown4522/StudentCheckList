@@ -1,0 +1,76 @@
+﻿@page
+@model ChecklistDesign.Pages.ProfileModel
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<style>
+    .profile-pic-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .upload-icon-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+        .upload-icon-btn:hover {
+            background-color: #0b5ed7;
+        }
+
+    .hidden-input {
+        display: none;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <h2 class="fw-bold mb-4">👤 Welcome, @Model.UserProfile.FirstName @Model.UserProfile.LastName</h2>
+
+            <div class="card shadow-lg rounded-4">
+                <div class="card-body p-4">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="profile-pic-wrapper mb-4">
+                            <img src="@Model.UserProfile.Profilepic"
+                                 class="rounded-circle shadow"
+                                 style="width: 180px; height: 180px; object-fit: cover;"
+                                 alt="Profile Picture" />
+
+                            <label class="upload-icon-btn" title="Change Picture">
+                                <i class="bi bi-camera"></i>
+                                <input type="file" name="UploadedFile" class="hidden-input" onchange="this.form.submit()" />
+                            </label>
+                        </div>
+                    </form>
+
+                    <ul class="list-group list-group-flush text-start mb-4">
+                        <li class="list-group-item"><strong>🧑 First Name:</strong> @Model.UserProfile.FirstName</li>
+                        <li class="list-group-item"><strong>🧑 Last Name:</strong> @Model.UserProfile.LastName</li>
+                        <li class="list-group-item"><strong>🛡️ Role:</strong> @Model.UserProfile.Role</li>
+                    </ul>
+
+                    @if (!string.IsNullOrEmpty(Model.UserProfile.Message))
+                    {
+                        <div class="alert alert-info mt-3" role="alert">
+                            @Model.UserProfile.Message
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

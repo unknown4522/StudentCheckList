@@ -1,0 +1,373 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project Dev\\ChecklistDesign\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\studentlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\studentlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\schoolyearpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\schoolyearpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\schoolyearpage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\schoolyearpage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\services\\studentfilesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\services\\studentfilesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\models\\studentfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\models\\studentfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\services\\schoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\services\\schoolyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\services\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\services\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\campuslist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\campuslist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|c:\\project dev\\checklistdesign\\checklistdesign\\pages\\campuslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86DB4A7A-A4FF-4431-9B49-BCA4DFB92996}|ChecklistDesign\\ChecklistDesign.csproj|solutionrelative:checklistdesign\\pages\\campuslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentList.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\StudentList.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\StudentList.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\StudentList.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\StudentList.cshtml",
+              "ViewState": "AgIAAHUBAAAAAAAAAAAAAD8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T13:26:24.237Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Studentfiles.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Models\\Studentfiles.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Models\\Studentfiles.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Models\\Studentfiles.cs",
+              "RelativeToolTip": "ChecklistDesign\\Models\\Studentfiles.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T01:06:21.344Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SchoolyearService.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Services\\SchoolyearService.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Services\\SchoolyearService.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Services\\SchoolyearService.cs",
+              "RelativeToolTip": "ChecklistDesign\\Services\\SchoolyearService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T06:06:25.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CampusService.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Services\\CampusService.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Services\\CampusService.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Services\\CampusService.cs",
+              "RelativeToolTip": "ChecklistDesign\\Services\\CampusService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwB0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T06:06:01.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\appsettings.json",
+              "RelativeDocumentMoniker": "ChecklistDesign\\appsettings.json",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\appsettings.json",
+              "RelativeToolTip": "ChecklistDesign\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-25T02:42:37.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Program.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Program.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Program.cs",
+              "RelativeToolTip": "ChecklistDesign\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T00:29:27.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Profile.cshtml.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Profile.cshtml.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Profile.cshtml.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Profile.cshtml.cs",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Profile.cshtml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:29:13.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Profile.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Profile.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Profile.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Profile.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAswEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T14:17:33.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T13:14:17.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Logout.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Logout.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Logout.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T13:09:20.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T08:08:10.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Login.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Login.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T08:08:01.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SchoolyearPage.cshtml.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\SchoolyearPage.cshtml.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\SchoolyearPage.cshtml.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\SchoolyearPage.cshtml.cs",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\SchoolyearPage.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T01:46:48.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SchoolyearPage.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\SchoolyearPage.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\SchoolyearPage.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\SchoolyearPage.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\SchoolyearPage.cshtml",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv58AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-21T01:46:43.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CampusList.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\CampusList.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\CampusList.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\CampusList.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\CampusList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T04:51:27.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentList.cshtml.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\StudentList.cshtml.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\StudentList.cshtml.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\StudentList.cshtml.cs",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\StudentList.cshtml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwEMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T04:57:05.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CampusList.cshtml.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\CampusList.cshtml.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\CampusList.cshtml.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\CampusList.cshtml.cs",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\CampusList.cshtml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T04:51:40.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Error.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T05:39:54.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ChecklistDesign\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-21T06:18:19.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentfilesService.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Services\\StudentfilesService.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Services\\StudentfilesService.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Services\\StudentfilesService.cs",
+              "RelativeToolTip": "ChecklistDesign\\Services\\StudentfilesService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAywEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T05:25:03.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginData.cs",
+              "DocumentMoniker": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Models\\LoginData.cs",
+              "RelativeDocumentMoniker": "ChecklistDesign\\Models\\LoginData.cs",
+              "ToolTip": "C:\\Project Dev\\ChecklistDesign\\ChecklistDesign\\Models\\LoginData.cs",
+              "RelativeToolTip": "ChecklistDesign\\Models\\LoginData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T02:21:36.385Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

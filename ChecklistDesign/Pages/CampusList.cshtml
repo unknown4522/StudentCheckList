@@ -1,0 +1,42 @@
+﻿@page
+@model StudentFilesFrontend.Pages.CampusListModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Campus List";
+}
+
+<h2 class="mb-4 text-center fw-bold">CAMPUS LIST</h2>
+
+@if (Model.Campuses == null || Model.Campuses.Count == 0)
+{
+    <div class="alert alert-warning text-center">No campuses found.</div>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var campus in Model.Campuses)
+        {
+            <div class="col">
+                <div class="card shadow-sm border-0 h-100 clickable-card" onclick="window.location.href='@Url.Page("SchoolyearPage", new { campusName = campus.CampusName })'">
+                    <div class="card-body">
+                        <h5 class="card-title">@campus.CampusName</h5>
+                        <p class="card-text text-muted">Campus ID: <strong>@campus.CampusID</strong></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<style>
+    .clickable-card {
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+        .clickable-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+</style>
